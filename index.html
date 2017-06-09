@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="description" >
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/global/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/global/css/bootstrap-extend.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="/assets/images/minibolt.png"  sizes="any">
+    <link rel="stylesheet" href="assets/css/index.css">
+
+  </head>
+  <body>
+
+    <div class="phone-img-container">
+      <div class="phone-container col-lg-6" >
+        <img class="phone" src="/assets/images/phone1.png" alt="" id="photo1">
+      </div>
+      <div class="phone-container col-lg-6 mobile-none" >
+        <img class="phone" src="/assets/images/phone2.png" alt="" id="photo2">
+      </div>
+      <div class="phone-container col-lg-6" >
+        <img class="phone" src="/assets/images/phone3.png" alt="" id="photo3">
+      </div>
+      <div class="phone-container col-lg-6 mobile-none" >
+        <img class="phone" src="/assets/images/phone4.png" alt="" id="photo4">
+      </div>
+    </div>
+
+    <div class="main-content">
+      <img src="/assets/images/dial_homepage.png" alt="" id="dial-in-img">
+      <div class="time">SUMMER 2017 </div>
+      <a href="/upcoming.html"><button class="primary-button upcoming">UPCOMING</button></a>
+    </div>
+
+
+
+
+  </body>
+  <script type="text/javascript">
+  $(document).on('click','.phone',function(){
+    var obj = $(this);
+    $(obj).addClass('spin');
+
+    setTimeout(function(){
+      $(obj).removeClass('spin');
+    },3400);
+  });
+
+  </script>
+</html>

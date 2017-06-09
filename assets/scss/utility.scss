@@ -1,0 +1,56 @@
+@font-face{
+  font-family:'digital-reg';
+  src: url('/assets/fonts/ds_digital/DS-DIGI.TTF');
+}
+@font-face{
+  font-family:'digital-bold';
+  src: url('/assets/fonts/ds_digital/DS-DIGIB.TTF');
+}
+@font-face{
+  font-family: 'goth-black';
+  src:url('/assets/fonts/gothic/GOTHAM-BLACK.OTF');
+}
+@font-face{
+  font-family: 'goth-bold';
+  src:url('/assets/fonts/gothic/GOTHAM-BOLD.OTF');
+}
+@font-face{
+  font-family: 'goth-medium';
+  src:url('/assets/fonts/gothic/GOTHAM-MEDIUM.OTF');
+}
+@font-face{
+  font-family: 'goth-light';
+  src:url('/assets/fonts/gothic/GOTHAM-LIGHT.OTF');
+}
+$main-blue:#2396CF;
+$main-blue-light:#35A0D8;
+$main-pink:#F58A71;
+$main-pink-hover:#FBC1AA;
+$main-yellow:#FCEE23;
+$digital-font:'digital-reg';
+$goth-black:'goth-black';
+$goth-light:'goth-light';
+$goth-bold:'goth-bold';
+$goth-medium:'goth-medium';
+
+.content-wrapper{
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+@mixin hover($background-color){
+  background-color:$background-color;
+  transition:.4s;
+  cursor:pointer;
+}
+
+.primary-button{
+  background-color:$main-pink;
+  color:white;
+  border:0px;
+  font-family:$goth-medium;
+  letter-spacing: 1px;
+  transition: .4s;
+  &:hover{
+    @include hover($main-pink-hover);
+  }
+}

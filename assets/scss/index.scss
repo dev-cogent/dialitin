@@ -1,0 +1,205 @@
+@import 'utility';
+html{
+  overflow: hidden;
+  width: 100%;
+}
+body{
+   background-image: url("/assets/images/background_seamless.jpg");
+   background-size: 100%;
+
+}
+
+
+
+.mobile-none{
+  @media screen and  (max-width: 499px){
+    display: none;
+  }
+}
+.phone-container img{
+  padding-left: 15%;
+  position: absolute;
+
+    &#photo1{
+      height: 720px;
+      -ms-transform: rotate(7deg);
+      -webkit-transform: rotate(7deg);
+      transform: rotate(20deg);
+      margin-top: -230px;
+      margin-left: 10%;
+      @media screen and (max-width: 992px) and (min-width: 730px){
+        height: 560px;
+        margin-top: -180px;
+        margin-left: -5%;
+      }
+      @media screen and (max-width: 729px){
+        height: 400px;
+        margin-top: -120px;
+        margin-left: -5%;
+      }
+      @media screen and (min-width: 2160px){
+        height: 873px;
+        margin-top: -320px;
+        margin-left: 20%;
+      }
+
+    }
+
+    &#photo2{
+      height: 920px;
+      margin-left: -260px;
+      -webkit-transform: rotate(340deg);
+      transform: rotate(340deg);
+      margin-top: -400px;
+      @media screen and (max-width: 992px) and (min-width: 730px){
+        height: 690px;
+        margin-left: 190px;
+        margin-top: -270px;
+      }
+      @media screen and (max-width: 729px){
+        height: 580px;
+        margin-left: 80px;
+        margin-top: -230px;
+      }
+      @media screen and (min-width: 1921px){
+        margin-left: 0%;
+      }
+      @media screen and (min-width: 2160px){
+        height: 1070px;
+        margin-left: -20%;
+        margin-top: -439px;
+      }
+    }
+
+    &#photo3{
+      height: 620px;
+      margin-left: -80px;
+      margin-top: 480px;
+      -webkit-transform: rotate(340deg);
+      transform: rotate(340deg);
+      @media screen and (max-width: 992px) and (min-width: 730px){
+        height: 480px;
+        margin-left: -190px;
+        margin-top: 450px;
+      }
+      @media screen and (max-width: 729px){
+        height: 400px;
+        margin-left: -160px;
+        margin-top: 470px;
+      }
+      @media screen and (min-width: 2160px){
+        height: 739px;
+        margin-left: 30px;
+        margin-top: 510px;
+      }
+    }
+
+    &#photo4{
+      height: 350px;
+      margin-left: 36px;
+      -webkit-transform: rotate(340deg);
+      transform: rotate(380deg);
+      margin-top: 670px;
+      @media screen and (max-width: 992px) and (min-width: 730px){
+        height: 260px;
+        margin-left: 353px;
+        margin-top: 640px;
+      }
+      @media screen and (max-width: 729px){
+        height: 220px;
+        margin-left: 293px;
+        margin-top: 630px;
+      }
+
+      @media screen and (min-width: 1921px){
+        margin-left: 20%;
+      }
+      @media screen and (min-width: 2160px){
+        height: 450px;
+        margin-left: 36px;
+        margin-top: 700px;
+        margin-left: 10%;
+      }
+    }
+
+
+    }
+
+
+
+
+
+
+  .main-content{
+    transform: translateY(370px);
+    text-align: center;
+  }
+
+  #dial-in-img{
+    width:35%;
+    min-width: 300px;
+    @media screen and (max-width: 992px) and (min-width: 730px){
+      width: 45%;
+    }
+  }
+
+  .time{
+    font-family:$goth-medium;
+    color:white;
+    font-size: 28px;
+    margin-top:25px;
+    letter-spacing: 1px;
+    @media screen and (max-width: 729px){
+      font-size: 20px;
+    }
+  }
+
+  .upcoming{
+    margin-top:25px;
+    height: 40px;
+    width: 120px;
+    letter-spacing: 1px;
+  }
+
+
+
+
+.spin {
+      -webkit-animation-name: spin;
+      -webkit-animation-duration: 3.5s;
+      -webkit-animation-timing-function: linear;
+      // -webkit-animation-iteration-count: 1;
+      -moz-animation-name: spin;
+      -moz-animation-duration: 3.5s;
+      -moz-animation-timing-function: linear;
+      // -moz-animation-iteration-count: 1;
+      -ms-animation-name: spin;
+      -ms-animation-duration: 3.5s;
+      -ms-animation-timing-function: linear;
+      // -ms-animation-iteration-count: 1;
+
+      animation-name: spin;
+      animation-duration: 3.5s;
+      animation-timing-function: linear;
+      // animation-iteration-count: 1;
+  }
+  @-ms-keyframes spin {
+      from { -ms-transform: rotate(0deg); }
+      to { -ms-transform: rotate(360deg); }
+  }
+  @-moz-keyframes spin {
+      from { -moz-transform: rotate(0deg); }
+      to { -moz-transform: rotate(360deg); }
+  }
+  @-webkit-keyframes spin {
+      from { -webkit-transform: rotate(0deg); }
+      to { -webkit-transform: rotate(360deg); }
+  }
+  @keyframes spin {
+      from {
+          transform:rotate(0deg);
+      }
+      to {
+          transform:rotate(360deg);
+      }
+  }
