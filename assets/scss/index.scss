@@ -4,7 +4,7 @@ html{
   width: 100%;
 }
 body{
-   background-image: url("/assets/images/background_seamless.jpg");
+   background-image: url("/assets/images/background_seamless_downsized_web.jpg");
    background-size: 100%;
 
 }
@@ -37,11 +37,23 @@ body{
         margin-top: -120px;
         margin-left: -5%;
       }
+      @media screen and (min-width: 993px) and (max-width: 1200px){
+        margin-top: -50%;
+        margin-left: 0;
+      }
+
+      @media screen and (min-width:1400) and (max-width:1650px) {
+        height: 790px;
+        transform: rotate(17deg);
+        margin-top: -256px;
+        margin-left: 8%;
+      }
       @media screen and (min-width: 2160px){
         height: 873px;
         margin-top: -320px;
         margin-left: 20%;
       }
+
 
     }
 
@@ -120,6 +132,10 @@ body{
         margin-top: 700px;
         margin-left: 10%;
       }
+
+      @media screen and (min-height:650px) and (max-height:750px){
+        margin-top: 83%;
+      }
     }
 
 
@@ -131,12 +147,15 @@ body{
 
 
   .main-content{
-    transform: translateY(370px);
+    transform: translateY(340px);
     text-align: center;
+    @media screen and (min-width: 993px) and (max-width: 1200px){
+      transform: translateY(370px);
+    }
   }
 
   #dial-in-img{
-    width:35%;
+    width:40%;
     min-width: 300px;
     @media screen and (max-width: 992px) and (min-width: 730px){
       width: 45%;
@@ -156,12 +175,12 @@ body{
 
   .upcoming{
     margin-top:25px;
-    height: 40px;
-    width: 120px;
+    height: 42px;
+    width: 206px;
+    font-size: 1.2rem;
+    text-align: -webkit-center;
     letter-spacing: 1px;
   }
-
-
 
 
 .spin {
