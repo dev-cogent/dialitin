@@ -58,20 +58,20 @@ body{
     }
 
     &#photo2{
-      height: 920px;
-      margin-left: -260px;
+      height: 630px;
+      margin-left: 13% !important;
       -webkit-transform: rotate(340deg);
       transform: rotate(340deg);
-      margin-top: -400px;
+      margin-top: -250px;
       @media screen and (max-width: 992px) and (min-width: 730px){
-        height: 690px;
-        margin-left: 190px;
-        margin-top: -270px;
+        height: 480px;
+        margin-left: 32% !important;
+        margin-top: -160px;
       }
       @media screen and (max-width: 729px){
-        height: 580px;
-        margin-left: 80px;
-        margin-top: -230px;
+        height: 360px;
+        margin-left: 40% !important;
+        margin-top: -110px;
       }
       @media screen and (min-width: 1921px){
         margin-left: 0%;
@@ -175,9 +175,9 @@ body{
 
   .upcoming{
     margin-top:25px;
-    height: 42px;
-    width: 206px;
-    font-size: 1.2rem;
+    height: 35px;
+    width: 175px;
+    font-size: 1rem;
     text-align: -webkit-center;
     letter-spacing: 1px;
   }
