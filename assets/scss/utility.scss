@@ -25,7 +25,7 @@
 $main-blue:#2396CF;
 $main-blue-light:#35A0D8;
 $main-pink:#F58A71;
-$main-pink-hover:#FBC1AA;
+$main-pink-hover:#0A758E;
 $main-yellow:#FCEE23;
 $digital-font:'digital-reg';
 $goth-black:'goth-black';
@@ -47,7 +47,7 @@ $goth-medium:'goth-medium';
   background-color:$main-pink;
   color:white;
   border:0px;
-  font-family:$goth-medium;
+  font-family:$goth-light;
   letter-spacing: 1px;
   transition: .4s;
   &:hover{
