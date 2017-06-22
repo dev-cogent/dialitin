@@ -32,7 +32,7 @@ $goth-black:'goth-black';
 $goth-light:'goth-light';
 $goth-bold:'goth-bold';
 $goth-medium:'goth-medium';
-
+$white:#FFFFFF;
 .content-wrapper{
   overflow-x: hidden;
   overflow-y: hidden;
@@ -51,6 +51,19 @@ $goth-medium:'goth-medium';
   letter-spacing: 1px;
   transition: .4s;
   &:hover{
-    @include hover($main-pink-hover);
+    color:$main-pink;
+    @include hover($white);
+  }
+}
+.secondary-button{
+  background-color:$main-yellow;
+  color:white;
+  border:0px;
+  font-family:$goth-light;
+  letter-spacing: 1px;
+  transition: .4s;
+  &:hover{
+    color:$main-yellow;
+    @include hover($white);
   }
 }
