@@ -49,20 +49,20 @@ a {
     width: 80%;
     font-size: 11px;
   }
-  @media screen and (max-width: 400px){
+  @media screen and (max-width: 500px){
     height: 30px;
-    width: 70px;
+    width: 90px;
     font-size: 11px;
   }
 }
 
-.main-content{
-  text-align: center;
-  transform: translateY(-75%);
-  @media screen and (max-width: 499px){
-    transform: translateY(120%);
-  }
-}
+// .main-content{
+//   text-align: center;
+//   transform: translateY(-75%);
+//   @media screen and (max-width: 499px){
+//     transform: translateY(120%);
+//   }
+// }
 
 .yellow-head{
   color:$main-yellow;
@@ -87,7 +87,6 @@ a {
 
 .call-now{
   margin-top: 50px;
-  color:$main-pink-hover !important;
   font-size: 3vw !important;
   animation-duration: 1500ms;
   animation-name: blink;
@@ -191,26 +190,26 @@ a {
 //   }
 // }
 
-// .image-slider{
-//   width: 260%;
-//   min-width: 3500px;
-//   margin-top: 6%;
-// }
-//
-// #first-image{
-//   -webkit-animation: bannermove 30s linear infinite;
-//    -moz-animation: bannermove 30s linear infinite;
-//     -ms-animation: bannermove 30s linear infinite;
-//      -o-animation: bannermove 30s linear infinite;
-//         animation: bannermove 30s linear infinite;
-//         @media screen and (max-width: 500px){
-//           -webkit-animation: 0 ;
-//            -moz-animation:  0 ;
-//             -ms-animation:  0 ;
-//              -o-animation:  0 ;
-//                 animation:  0 ;
-//         }
-// }
+.image-slider{
+  width: 260%;
+  min-width: 3500px;
+  margin-top: 1%;
+}
+
+#first-image{
+  -webkit-animation: bannermove 20s linear infinite;
+   -moz-animation: bannermove 20s linear infinite;
+    -ms-animation: bannermove 20s linear infinite;
+     -o-animation: bannermove 20s linear infinite;
+        animation: bannermove 20s linear infinite;
+        @media screen and (max-width: 500px){
+          -webkit-animation: 0 ;
+           -moz-animation:  0 ;
+            -ms-animation:  0 ;
+             -o-animation:  0 ;
+                animation:  0 ;
+        }
+}
 
 
 @media screen and (max-width: 500px){
@@ -228,63 +227,67 @@ a {
 
 }
 
-//
-// @keyframes "bannermove" {
-//  0% {
-//     margin-left: 0px;
-//  }
-//  100% {
-//     margin-left: -2125px;
-//  }
-//
-// }
-//
-// @-moz-keyframes bannermove {
-//  0% {
-//    margin-left: 0px;
-//  }
-//  100% {
-//    margin-left: -2125px;
-//  }
-//
-// }
-//
-// @-webkit-keyframes "bannermove" {
-//  0% {
-//    margin-left: 0px;
-//  }
-//  100% {
-//    margin-left: -2125px;
-//  }
-//
-// }
-//
-// @-ms-keyframes "bannermove" {
-//  0% {
-//    margin-left: 0px;
-//  }
-//  100% {
-//    margin-left: -2125px;
-//  }
-//
-// }
-//
-// @-o-keyframes "bannermove" {
-//  0% {
-//    margin-left: 0px;
-//  }
-//  100% {
-//    margin-left: -2125px;
-//  }
-//
-//  }
 
-// .dial-image{
-//   display: inline-block;
-//   height: 30%;
-//   width: 9%;
-//   margin-right: 20px;
-// }
+@keyframes "bannermove" {
+ 0% {
+    margin-left: -55%;
+ }
+ 100% {
+    margin-left: -100%;
+ }
+
+}
+
+@-moz-keyframes bannermove {
+  0% {
+     margin-left: -55%;
+  }
+  100% {
+     margin-left: -100%;
+  }
+
+}
+
+@-webkit-keyframes "bannermove" {
+  0% {
+     margin-left: -55%;
+  }
+  100% {
+     margin-left: -100%;
+  }
+
+}
+
+@-ms-keyframes "bannermove" {
+  0% {
+     margin-left: -55%;
+  }
+  100% {
+     margin-left: -100%;
+  }
+
+}
+
+@-o-keyframes "bannermove" {
+  0% {
+     margin-left: 0px;
+  }
+  100% {
+     margin-left: -100%;
+  }
+
+ }
+
+.dial-image{
+  float: left;
+  height: 30%;
+  width: 9%;
+  margin-right: 20px;
+}
+
+.scroll-text{
+  display: inline;
+}
 
 .future{
   font-size: 1.5vw !important;
@@ -295,7 +298,8 @@ a {
     font-size: 4vw !important;
   }
   @media screen and (max-width: 500px){
-    font-size: 4.5vw !important;
+    font-size: 5vw !important;
+    float: left;
   }
 }
 
@@ -306,7 +310,8 @@ a {
 .show-info{
   width: 80%;
   margin-left: 12%;
-  margin-bottom: 55px;
+  margin-bottom: 25px;
+
 }
 
 .td-data{
@@ -348,11 +353,18 @@ a {
     margin-bottom: 15px;
   }
   .td-data{
-    font-size: 20px;
+    font-size: 23px;
+    display: block;
+    width: 100%;
+    float: left;
+    text-align: left;
+  }
+  tr .td-data{
+    max-width: 200px;
   }
   .call-now{
     font-size: 7.5vw !important;
-    margin-top: 30px;
+    margin-top: -20px;
   }
   .non-mobile{
     display: none;
