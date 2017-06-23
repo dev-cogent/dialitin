@@ -9,8 +9,6 @@ body{
 
 }
 
-
-
 .mobile-none{
   @media screen and  (max-width: 499px){
     display: none;
@@ -34,8 +32,8 @@ body{
       }
       @media screen and (max-width: 729px){
         height: 400px;
-        margin-top: -120px;
-        margin-left: -5%;
+        margin-top: -170px;
+        margin-left: -15%;
       }
       @media screen and (min-width: 993px) and (max-width: 1200px){
         margin-top: -50%;
@@ -59,7 +57,7 @@ body{
 
     &#photo2{
       height: 630px;
-      margin-left: 13% !important;
+      margin-left: 10% !important;
       -webkit-transform: rotate(340deg);
       transform: rotate(340deg);
       margin-top: -250px;
@@ -138,16 +136,11 @@ body{
       }
     }
 
-
-    }
-
-
-
-
+  }
 
 
   .main-content{
-    transform: translateY(340px);
+    transform: translateY(250px);
     text-align: center;
     @media screen and (min-width: 993px) and (max-width: 1200px){
       transform: translateY(370px);
@@ -155,17 +148,27 @@ body{
   }
 
   #dial-in-img{
-    width:40%;
+    width:35%;
     min-width: 300px;
+    padding-bottom: 90px;
+    margin-top: -50px;
+    @media screen and (max-width: 1200px) and (min-width: 993px){
+      margin-top: -140px;
+    }
     @media screen and (max-width: 992px) and (min-width: 730px){
       width: 45%;
+      margin-top: -35px;
     }
+    @media screen and (max-width: 500px){
+      padding-bottom: 0px;
+    }
+
   }
 
   .time{
-    font-family:$goth-medium;
+    font-family:$goth-light;
     color:white;
-    font-size: 28px;
+    font-size: 23px;
     margin-top:25px;
     letter-spacing: 1px;
     @media screen and (max-width: 729px){
@@ -173,14 +176,6 @@ body{
     }
   }
 
-  .upcoming{
-    margin-top:25px;
-    height: 35px;
-    width: 175px;
-    font-size: 1rem;
-    text-align: -webkit-center;
-    letter-spacing: 1px;
-  }
 
 
 .spin {
@@ -222,3 +217,45 @@ body{
           transform:rotate(360deg);
       }
   }
+
+
+.social-icon{
+  display: inline;
+}
+.footer{
+      text-align: center;
+      position: fixed;
+      bottom: 10px;
+      width: 100%;
+}
+.fa{
+  margin-right: 10px;
+  color: white;
+  font-size: 20px;
+
+}
+.another{
+  text-align: center;
+}
+
+#instagram-icon{
+  transition: .4s;
+  &:hover{
+    color:$main-pink;
+    transition: .4s;
+  }
+}
+#facebook-icon{
+  transition: .4s;
+  &:hover{
+    color:$main-yellow;
+    transition: .4s;
+  }
+}
+#twitter-icon{
+  transition: .4s;
+  &:hover{
+    color:#71CBCC;
+    transition: .4s;
+  }
+}

@@ -42,8 +42,7 @@
           <table class="show-info">
             <tr>
               <td class="td-data"><span class="yellow-highlight"> SAT JULY 22 </span></td>
-              <td class="td-data">MARTIN JENSEN</td>
-              <td class="td-data">MEMORY MOTEL <span class="non-mobile">|</span> MONTAUK, NY </td>
+              <td class="td-data">MARTIN JENSEN &nbsp; MEMORY MOTEL <span class="non-mobile">|</span> MONTAUK, NY </td>
               <td>
                 <a href="https://www.eventbrite.com/e/dial-it-in-with-martin-jensen-tickets-35215468414" target="_blank">
                   <button class="secondary-button upcoming" type="button" name="button">TICKETS</button>
@@ -70,3 +69,14 @@
 
   </body>
 </html>
+
+<script type="text/javascript">
+  $(document).on('click','.phone',function(){
+    var obj = $(this);
+    $(obj).addClass('spin');
+
+    setTimeout(function(){
+      $(obj).removeClass('spin');
+    },3400);
+  });
+</script>
