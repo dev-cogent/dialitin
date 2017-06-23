@@ -33,6 +33,7 @@ $goth-light:'goth-light';
 $goth-bold:'goth-bold';
 $goth-medium:'goth-medium';
 $white:#FFFFFF;
+$main-purple:#556FB5;
 .content-wrapper{
   overflow-x: hidden;
   overflow-y: hidden;
@@ -56,14 +57,14 @@ $white:#FFFFFF;
   }
 }
 .secondary-button{
-  background-color:$main-yellow;
+  background-color:$main-purple;
   color:white;
   border:0px;
   font-family:$goth-light;
   letter-spacing: 1px;
   transition: .4s;
   &:hover{
-    color:$main-yellow;
+    color:$main-purple;
     @include hover($white);
   }
 }
